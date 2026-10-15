@@ -1,0 +1,92 @@
+{
+  "experiencias/cena-romantica": [
+    "/images/experiencias/cena-romantica/ohbf49_cenas-romanticas05.jpg",
+    "/images/experiencias/cena-romantica/ohbf49_cenas-romanticas06.jpg",
+    "/images/experiencias/cena-romantica/ohbf49_cenas-romanticas15.jpg",
+    "/images/experiencias/cena-romantica/ohbf49_cenas-romanticas17.jpg",
+    "/images/experiencias/cena-romantica/ohbf49_cenas-romanticas21.jpg"
+  ],
+  "experiencias/pintor": [
+    "/images/experiencias/pintor/img_6687.jpg",
+    "/images/experiencias/pintor/img_6689.jpg",
+    "/images/experiencias/pintor/img_6694.jpg",
+    "/images/experiencias/pintor/img_6710.jpg",
+    "/images/experiencias/pintor/img_67282.jpg"
+  ],
+  "generales": [
+    "/images/generales/ohbf49_habitaciones02.png",
+    "/images/generales/ohbf49_habitaciones10.png",
+    "/images/generales/ohbf49_habitaciones12.png",
+    "/images/generales/ohf49_habitaciones18.png"
+  ],
+  "espacios/cafeteria": [
+    "/images/espacios/cafeteria/ohbf49_cafeteria02.png",
+    "/images/espacios/cafeteria/ohbf49_cafeteria03.png",
+    "/images/espacios/cafeteria/ohbf49_cafeteria04.png",
+    "/images/espacios/cafeteria/ohbf49_cafeteria08.png",
+    "/images/espacios/cafeteria/ohbf49_cafeteria09.png",
+    "/images/espacios/cafeteria/whatsapp-image-2026-09-28-at-09.06.30-3.jpeg"
+  ],
+  "espacios/coworking": [
+    "/images/espacios/coworking/ohbf49_coworking02.png",
+    "/images/espacios/coworking/ohbf49_coworking03.png",
+    "/images/espacios/coworking/ohbf49_coworking04.png",
+    "/images/espacios/coworking/ohbf49_coworking07.png",
+    "/images/espacios/coworking/ohbf49_coworking10.png",
+    "/images/espacios/coworking/ohbf49_coworking13.png",
+    "/images/espacios/coworking/ohbf49_coworking18.png"
+  ],
+  "espacios/fachada": [
+    "/images/espacios/fachada/ohbf49_fachada01.png",
+    "/images/espacios/fachada/ohbf49_fachada02.png"
+  ],
+  "espacios/foro-cultural": [
+    "/images/espacios/foro-cultural/ohbf49_galeria-re01.png",
+    "/images/espacios/foro-cultural/ohbf49_galeria-re02.png",
+    "/images/espacios/foro-cultural/ohbf49_galeria-re03.jpg",
+    "/images/espacios/foro-cultural/ohbf49_galeria-re05.png"
+  ],
+  "habitaciones/sencilla": [
+    "/images/habitaciones/sencilla/ohbf49habitacion_sencilla02.png",
+    "/images/habitaciones/sencilla/ohbf49habitacion_sencilla04.png",
+    "/images/habitaciones/sencilla/ohbf49habitacion_sencilla05.png"
+  ],
+  "espacios/recepcion": [
+    "/images/espacios/recepcion/ohbf49_recepcion05.png",
+    "/images/espacios/recepcion/ohbf49_recepcion06.png",
+    "/images/espacios/recepcion/ohbf49_recepcion08.png"
+  ],
+  "espacios/restaurante": [
+    "/images/espacios/restaurante/ohbf49_garnacheria04.jpg",
+    "/images/espacios/restaurante/ohbf49_garnacheria07.jpg",
+    "/images/espacios/restaurante/ohbf49_garnacheria09.jpg",
+    "/images/espacios/restaurante/ohbf49_garnacheria11.jpg",
+    "/images/espacios/restaurante/ohbf49_garnacheria14.png",
+    "/images/espacios/restaurante/ohbf49_garnacheria22.png",
+    "/images/espacios/restaurante/ohbf49_garnacheria23.jpeg",
+    "/images/espacios/restaurante/ohbf49_garnacheria44.png",
+    "/images/espacios/restaurante/ohbf49_garnacheria47.png",
+    "/images/espacios/restaurante/ohbf49_garnacheria49.png",
+    "/images/espacios/restaurante/ohbf49_garnacheria53.png",
+    "/images/espacios/restaurante/ohbf49_garnacheria66.png"
+  ],
+  "espacios/rooftop": [
+    "/images/espacios/rooftop/ohbf49_rooftop01.jpeg",
+    "/images/espacios/rooftop/ohbf49_rooftop02.png",
+    "/images/espacios/rooftop/ohbf49_rooftop04.jpeg",
+    "/images/espacios/rooftop/ohbf49_rooftop06.jpeg",
+    "/images/espacios/rooftop/ohbf49_rooftop15.png"
+  ],
+  "espacios/cine": [
+    "/images/espacios/cine/ohbf49_sala-de-cine01.heic",
+    "/images/espacios/cine/ohbf49_sala-de-cine05.png",
+    "/images/espacios/cine/ohbf49_sala-de-cine08.png"
+  ],
+  "habitaciones/deluxe": [
+    "/images/habitaciones/deluxe/ohbf49habitacion_delux01.png",
+    "/images/habitaciones/deluxe/ohbf49habitacion_deluxe02.png",
+    "/images/habitaciones/deluxe/ohbf49habitacion_deluxe04.png",
+    "/images/habitaciones/deluxe/ohbf49habitacion_deluxe05.png",
+    "/images/habitaciones/deluxe/ohbf49_habitaciones08.png"
+  ]
+}
