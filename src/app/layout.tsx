@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from 'next';
-import { Space_Grotesk, Raleway } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import { Space_Grotesk, Raleway, Cinzel } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import DiaDeMuertosPopup from '@/components/DiaDeMuertosPopup';
 import './globals.css';
 
 const spaceGrotesk = Space_Grotesk({
@@ -16,6 +17,13 @@ const spaceGrotesk = Space_Grotesk({
 const raleway = Raleway({
   subsets: ['latin'],
   variable: '--font-raleway',
+  display: 'swap',
+  preload: true,
+});
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  variable: '--font-cinzel',
   display: 'swap',
   preload: true,
 });
@@ -225,7 +233,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="es" className={`${spaceGrotesk.variable} ${raleway.variable}`}>
+    <html lang="es" className={`${spaceGrotesk.variable} ${raleway.variable} ${cinzel.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -237,6 +245,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <DiaDeMuertosPopup />
         <Analytics />
       </body>
     </html>

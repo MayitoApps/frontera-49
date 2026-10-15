@@ -47,6 +47,7 @@ const config: Config = {
       fontFamily: {
         display: ['var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
         sans: ['var(--font-raleway)', 'system-ui', 'sans-serif'],
+        cinzel: ['var(--font-cinzel)', 'Cinzel', 'serif'],
       },
       boxShadow: {
         'glow-red': '0 0 25px rgba(152, 26, 21, 0.45)',
