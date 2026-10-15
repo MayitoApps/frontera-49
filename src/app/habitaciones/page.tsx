@@ -20,7 +20,7 @@ export default function HabitacionesPage() {
     <div className="bg-[#0A0D0C] text-[#F4F5F1] pt-24 sm:pt-28 pb-16 sm:pb-20">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-16 text-center border-b border-white/10">
-        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-2 sm:mb-3">
+        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-2 sm:mb-3">
           Hospedaje Boutique · Roma Norte
         </span>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-light text-[#F4F5F1] font-display uppercase tracking-wide max-w-4xl mx-auto leading-tight mb-4 sm:mb-6">
@@ -78,7 +78,7 @@ export default function HabitacionesPage() {
 
           <div className="lg:col-span-5 space-y-4 sm:space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#981A15]/15 border border-[#981A15]/40 text-[#F4F5F1] text-[10px] sm:text-xs uppercase tracking-widest">
-              <Sparkles className="w-3.5 h-3.5 text-[#981A15]" />
+              <Sparkles className="w-3.5 h-3.5 text-[#E25C54]" />
               <span>Máxima Intimidad</span>
             </div>
 
@@ -91,7 +91,7 @@ export default function HabitacionesPage() {
               <span className="text-3xl sm:text-4xl font-light text-[#F4F5F1] font-display">
                 $1,392.00
               </span>
-              <span className="text-xs uppercase tracking-widest text-[#981A15] font-semibold">
+              <span className="text-xs uppercase tracking-widest text-[#E25C54] font-semibold">
                 MXN / Noche
               </span>
             </div>
@@ -102,19 +102,19 @@ export default function HabitacionesPage() {
 
             <div className="space-y-2.5 pt-1 text-xs sm:text-sm text-[#F4F5F1]">
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Cama King / Queen con sábanas de alta densidad</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Baño privado completo con regadera de lluvia</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Wifi dedicado para nómadas digitales</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Acceso completo a Rooftop, Coworking y Cine</span>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default function HabitacionesPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-5 space-y-4 sm:space-y-6 order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#F4F5F1] text-[10px] sm:text-xs uppercase tracking-widest">
-              <Bed className="w-3.5 h-3.5 text-[#981A15]" />
+              <Bed className="w-3.5 h-3.5 text-[#E25C54]" />
               <span>23 Habitaciones Disponibles</span>
             </div>
 
@@ -149,7 +149,7 @@ export default function HabitacionesPage() {
               <span className="text-3xl sm:text-4xl font-light text-[#F4F5F1] font-display">
                 $928.00
               </span>
-              <span className="text-xs uppercase tracking-widest text-[#981A15] font-semibold">
+              <span className="text-xs uppercase tracking-widest text-[#E25C54] font-semibold">
                 MXN / Noche
               </span>
             </div>
@@ -160,19 +160,19 @@ export default function HabitacionesPage() {
 
             <div className="space-y-2.5 pt-1 text-xs sm:text-sm text-[#F4F5F1]">
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Espacio acogedor para descanso profundo</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Baños compartidos impecables con servicio constante</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Acceso directo a rooftop, áreas comunes y coworking</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] flex-shrink-0" />
                 <span>Lockers individuales y seguridad 24/7</span>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function HabitacionesPage() {
       <section className="py-12 sm:py-20 lg:py-28 bg-[#0E1210]">
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-8 sm:mb-14">
-            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5">
               Disponibilidad Inmediata
             </span>
             <h2 className="text-2xl sm:text-4xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">

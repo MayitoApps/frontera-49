@@ -91,7 +91,7 @@ export default function Navbar() {
                       className={`relative py-1 text-xs uppercase tracking-widest font-sans transition-colors duration-200 ${
                         isActive
                           ? 'text-[#F4F5F1] font-semibold'
-                          : 'text-[#F4F5F1]/75 hover:text-[#981A15]'
+                          : 'text-[#F4F5F1]/75 hover:text-[#E25C54]'
                       }`}
                     >
                       {link.label}
@@ -112,7 +112,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-[#F4F5F1] hover:text-[#981A15] transition-colors focus:outline-none z-50"
+            className="lg:hidden p-2 text-[#F4F5F1] hover:text-[#E25C54] transition-colors focus:outline-none z-50"
             aria-label={mobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
             aria-expanded={mobileMenuOpen}
           >
@@ -169,7 +169,7 @@ export default function Navbar() {
 
           {/* Pie del menú móvil */}
           <div className="pt-4 border-t border-white/10 text-center space-y-1">
-            <p className="text-[11px] uppercase tracking-widest text-[#981A15] font-semibold">
+            <p className="text-[11px] uppercase tracking-widest text-[#E25C54] font-semibold">
               Frontera 49 · Roma Norte
             </p>
             <p className="text-[11px] text-[#8E9B93]">Ciudad de México</p>

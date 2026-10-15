@@ -31,14 +31,14 @@ export default function HomePage() {
             {/* Columna Izquierda: Texto Editorial */}
             <div className="lg:col-span-6 space-y-4 sm:space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-[#981A15]/40 text-[#F4F5F1] text-[10px] sm:text-xs uppercase tracking-widest font-sans">
-                <Sparkles className="w-3.5 h-3.5 text-[#981A15]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#E25C54]" />
                 <span>Hospitalidad Urbana con Identidad</span>
               </div>
 
               {/* Título en móvil mucho más grande que el texto */}
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#F4F5F1] font-display uppercase leading-tight">
                 Quédate donde <br />
-                <span className="text-[#981A15] font-serif italic lowercase font-normal">
+                <span className="text-[#E25C54] font-serif italic lowercase font-normal">
                   todo sucede.
                 </span>
               </h2>
@@ -59,10 +59,10 @@ export default function HomePage() {
                 />
                 <Link
                   href="/quienes-somos"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#981A15] text-xs uppercase tracking-wider text-[#F4F5F1] transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/15 hover:border-[#981A15] text-xs uppercase tracking-wider text-[#F4F5F1] transition-colors group"
                 >
-                  Conocer más
-                  <ArrowRight className="w-3.5 h-3.5 text-[#981A15]" />
+                  <span>Conocer más</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-[#F4F5F1] group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-14 gap-4">
             <div>
-              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5">
+              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5">
                 Descanso & Intimidad
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">
@@ -151,9 +151,10 @@ export default function HomePage() {
             </div>
             <Link
               href="/habitaciones"
-              className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#981A15] hover:text-[#B8241D] transition-colors"
+              className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-white/5 hover:bg-[#981A15] border border-white/20 hover:border-[#981A15] text-xs uppercase tracking-widest text-[#F4F5F1] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-glow-red"
             >
-              Ver todas las opciones <ArrowRight className="w-4 h-4" />
+              <span>Ver todas las opciones</span>
+              <ArrowRight className="w-4 h-4 text-[#F4F5F1] group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
@@ -187,7 +188,7 @@ export default function HomePage() {
                     <span className="text-xl sm:text-2xl font-light text-[#F4F5F1] font-display block">
                       $1,392.00
                     </span>
-                    <span className="text-[10px] uppercase tracking-widest text-[#981A15] font-semibold">
+                    <span className="text-[10px] uppercase tracking-widest text-[#E25C54] font-semibold">
                       MXN / Noche
                     </span>
                   </div>
@@ -199,19 +200,19 @@ export default function HomePage() {
 
                 <ul className="grid grid-cols-2 gap-2 pt-2 text-[11px] sm:text-xs text-[#F4F5F1]/80">
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Baño Privado</span>
                   </li>
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Wifi Rápido</span>
                   </li>
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Rooftop Lounge</span>
                   </li>
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Amenidades Orgánicas</span>
                   </li>
                 </ul>
@@ -256,7 +257,7 @@ export default function HomePage() {
                     <span className="text-xl sm:text-2xl font-light text-[#F4F5F1] font-display block">
                       $928.00
                     </span>
-                    <span className="text-[10px] uppercase tracking-widest text-[#981A15] font-semibold">
+                    <span className="text-[10px] uppercase tracking-widest text-[#E25C54] font-semibold">
                       MXN / Noche
                     </span>
                   </div>
@@ -268,19 +269,19 @@ export default function HomePage() {
 
                 <ul className="grid grid-cols-2 gap-2 pt-2 text-[11px] sm:text-xs text-[#F4F5F1]/80">
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Gran Confort</span>
                   </li>
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Baños Impecables</span>
                   </li>
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Coworking</span>
                   </li>
                   <li className="flex items-center gap-1.5 sm:gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#981A15]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#E25C54]" />
                     <span>Comunidad</span>
                   </li>
                 </ul>
@@ -303,7 +304,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-20 lg:py-28 relative border-b border-white/10 bg-[#0A0D0C]">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">
-            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5">
               Momentos Memorables
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">
@@ -419,7 +420,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-14 gap-4">
             <div>
-              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5">
+              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5">
                 Convivencia & Diseño
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">
@@ -428,9 +429,10 @@ export default function HomePage() {
             </div>
             <Link
               href="/espacios"
-              className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#981A15] hover:text-[#B8241D] transition-colors"
+              className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-white/5 hover:bg-[#981A15] border border-white/20 hover:border-[#981A15] text-xs uppercase tracking-widest text-[#F4F5F1] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-glow-red"
             >
-              Explorar galería de espacios <ArrowRight className="w-4 h-4" />
+              <span>Explorar galería de espacios</span>
+              <ArrowRight className="w-4 h-4 text-[#F4F5F1] group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
@@ -445,7 +447,7 @@ export default function HomePage() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-8 flex flex-col justify-end">
-                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold mb-1">
+                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold mb-1">
                   Capacidad: 80 Personas
                 </span>
                 <h3 className="text-xl sm:text-3xl font-light text-[#F4F5F1] font-display uppercase">
@@ -474,7 +476,7 @@ export default function HomePage() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 flex flex-col justify-end">
-                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold mb-1">
+                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold mb-1">
                   Nómadas Digitales
                 </span>
                 <h3 className="text-lg sm:text-2xl font-light text-[#F4F5F1] font-display uppercase">
@@ -503,7 +505,7 @@ export default function HomePage() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 flex flex-col justify-end">
-                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold mb-1">
+                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold mb-1">
                   Gastronomía Tradicional
                 </span>
                 <h3 className="text-lg sm:text-2xl font-light text-[#F4F5F1] font-display uppercase">
@@ -532,7 +534,7 @@ export default function HomePage() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 sm:p-8 flex flex-col justify-end">
-                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold mb-1">
+                <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold mb-1">
                   13m x 5.5m · 70 Pax
                 </span>
                 <h3 className="text-xl sm:text-3xl font-light text-[#F4F5F1] font-display uppercase">
@@ -558,12 +560,12 @@ export default function HomePage() {
       <section className="py-12 sm:py-20 lg:py-28 relative border-b border-white/10 bg-[#0A0D0C]">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">
-            <div className="flex items-center justify-center gap-1 text-[#981A15] mb-2 sm:mb-3">
+            <div className="flex items-center justify-center gap-1 text-[#E25C54] mb-2 sm:mb-3">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-[#981A15]" />
+                <Star key={i} className="w-4 h-4 fill-[#E25C54]" />
               ))}
             </div>
-            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5">
               Experiencias Reales & Recomendadas
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">
@@ -573,7 +575,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
             <div className="bg-[#121715] border border-white/10 p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between shadow-xl">
-              <Quote className="w-6 h-6 text-[#981A15]/40 mb-3" />
+              <Quote className="w-6 h-6 text-[#E25C54]/50 mb-3" />
               <p className="text-xs sm:text-sm text-[#F4F5F1] leading-relaxed font-sans font-light italic mb-4 sm:mb-6">
                 “Súper recomendable, de buen precio y la comida con un sabor estupendo. La presentación atractiva de sus emplatados. El servicio es en extremo bueno.”
               </p>
@@ -584,7 +586,7 @@ export default function HomePage() {
             </div>
 
             <div className="bg-[#121715] border border-white/10 p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between shadow-xl">
-              <Quote className="w-6 h-6 text-[#981A15]/40 mb-3" />
+              <Quote className="w-6 h-6 text-[#E25C54]/50 mb-3" />
               <p className="text-xs sm:text-sm text-[#F4F5F1] leading-relaxed font-sans font-light italic mb-4 sm:mb-6">
                 “Great location and friendly staff. The room was clean and functional, and the interior of the boutique hotel is nicely decorated with authentic character.”
               </p>
@@ -595,7 +597,7 @@ export default function HomePage() {
             </div>
 
             <div className="bg-[#121715] border border-white/10 p-6 sm:p-8 rounded-2xl relative flex flex-col justify-between shadow-xl">
-              <Quote className="w-6 h-6 text-[#981A15]/40 mb-3" />
+              <Quote className="w-6 h-6 text-[#E25C54]/50 mb-3" />
               <p className="text-xs sm:text-sm text-[#F4F5F1] leading-relaxed font-sans font-light italic mb-4 sm:mb-6">
                 “Súper buen café, servicio de primera. Ricardo súper barista! El ambiente de la cafetería y áreas de coworking es inigualable en la Roma.”
               </p>
@@ -612,7 +614,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-20 lg:py-28 relative bg-[#0E1210]">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">
-            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5">
               Siempre Contigo
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">

@@ -38,7 +38,7 @@ export default function EventosPage() {
     <div className="bg-[#0A0D0C] text-[#F4F5F1] pt-24 sm:pt-28 pb-16 sm:pb-20">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-8 sm:py-16 text-center border-b border-white/10">
-        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-2 sm:mb-3">
+        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-2 sm:mb-3">
           Sedes Exclusivas · Roma Norte
         </span>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-light text-[#F4F5F1] font-display uppercase tracking-wide max-w-4xl mx-auto leading-tight mb-4 sm:mb-6">
@@ -59,7 +59,7 @@ export default function EventosPage() {
                 key={i}
                 className="bg-[#121715] border border-white/10 hover:border-[#981A15]/40 p-6 sm:p-8 rounded-2xl space-y-3 sm:space-y-4 shadow-xl transition-all"
               >
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#981A15]">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#E25C54]">
                   <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">
@@ -78,7 +78,7 @@ export default function EventosPage() {
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-20 border-b border-white/10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block">
               Servicio Integral
             </span>
             <h2 className="text-2xl sm:text-4xl font-light text-[#F4F5F1] font-display uppercase tracking-wide leading-tight">
@@ -86,19 +86,19 @@ export default function EventosPage() {
             </h2>
             <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm text-[#8E9B93]">
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] mt-0.5 flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] mt-0.5 flex-shrink-0" />
                 <span><strong className="text-[#F4F5F1]">Espacios Versátiles:</strong> Rooftop panorámico (80 pax), Foro Cultural (70 pax) y restaurante privado (50 pax).</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] mt-0.5 flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] mt-0.5 flex-shrink-0" />
                 <span><strong className="text-[#F4F5F1]">Hospedaje en el Mismo Sitio:</strong> 23 habitaciones para que tus invitados o equipo descansen sin traslados.</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] mt-0.5 flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] mt-0.5 flex-shrink-0" />
                 <span><strong className="text-[#F4F5F1]">Gastronomía & Coctelería:</strong> Menús personalizados de bocadillos mexicanos, comal, maridajes o barras de autor.</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-4 h-4 text-[#981A15] mt-0.5 flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E25C54] mt-0.5 flex-shrink-0" />
                 <span><strong className="text-[#F4F5F1]">Atención Concierge:</strong> Asesoría dedicada desde el primer contacto hasta el cierre de tu evento.</span>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function EventosPage() {
       <section className="py-12 sm:py-24 bg-[#0E1210]">
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-8 sm:mb-14">
-            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5 sm:mb-2">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5 sm:mb-2">
               Solicitud de Propuesta
             </span>
             <h2 className="text-2xl sm:text-4xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">

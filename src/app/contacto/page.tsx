@@ -18,7 +18,7 @@ export default function ContactoPage() {
     <div className="bg-[#0A0D0C] text-[#F4F5F1] pt-24 sm:pt-28 pb-16 sm:pb-20">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-16 text-center border-b border-white/10">
-        <span className="text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-2 sm:mb-3">
+        <span className="text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-2 sm:mb-3">
           Atención al Huésped · Roma Norte
         </span>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-light text-[#F4F5F1] font-display uppercase tracking-wide max-w-4xl mx-auto leading-tight mb-4 sm:mb-6">
@@ -41,7 +41,7 @@ export default function ContactoPage() {
 
               {/* Dirección */}
               <div className="flex items-start gap-3.5">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#981A15] flex-shrink-0">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#E25C54] flex-shrink-0">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
@@ -56,7 +56,7 @@ export default function ContactoPage() {
 
               {/* Teléfonos Fijos */}
               <div className="flex items-start gap-3.5">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#981A15] flex-shrink-0">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#E25C54] flex-shrink-0">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
@@ -64,11 +64,11 @@ export default function ContactoPage() {
                     Líneas Fijas
                   </span>
                   <div className="text-xs sm:text-sm text-[#F4F5F1] space-x-2">
-                    <a href="tel:5596969073" className="hover:text-[#981A15] transition-colors">
+                    <a href="tel:5596969073" className="hover:text-[#E25C54] transition-colors">
                       55 9696 9073
                     </a>
                     <span>/</span>
-                    <a href="tel:5596910966" className="hover:text-[#981A15] transition-colors">
+                    <a href="tel:5596910966" className="hover:text-[#E25C54] transition-colors">
                       55 9691 0966
                     </a>
                   </div>
@@ -77,7 +77,7 @@ export default function ContactoPage() {
 
               {/* Teléfonos Móviles */}
               <div className="flex items-start gap-3.5">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#981A15] flex-shrink-0">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#E25C54] flex-shrink-0">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
@@ -85,11 +85,11 @@ export default function ContactoPage() {
                     Líneas Móviles
                   </span>
                   <div className="text-xs sm:text-sm text-[#F4F5F1] space-x-2">
-                    <a href="tel:5556455347" className="hover:text-[#981A15] transition-colors">
+                    <a href="tel:5556455347" className="hover:text-[#E25C54] transition-colors">
                       55 5645 5347
                     </a>
                     <span>/</span>
-                    <a href="tel:5555737822" className="hover:text-[#981A15] transition-colors">
+                    <a href="tel:5555737822" className="hover:text-[#E25C54] transition-colors">
                       55 5573 7822
                     </a>
                   </div>
@@ -98,7 +98,7 @@ export default function ContactoPage() {
 
               {/* WhatsApp Oficial */}
               <div className="flex items-start gap-3.5">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#981A15] flex-shrink-0">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#E25C54] flex-shrink-0">
                   <div className="relative w-4 h-4 sm:w-5 sm:h-5">
                     <Image src="/images/whatsapp-white.png" alt="WhatsApp" fill className="object-contain" />
                   </div>
@@ -111,7 +111,7 @@ export default function ContactoPage() {
                     href="https://wa.me/525574555091"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs sm:text-sm text-[#F4F5F1] hover:text-[#981A15] transition-colors block font-medium"
+                    className="text-xs sm:text-sm text-[#F4F5F1] hover:text-[#E25C54] transition-colors block font-medium"
                   >
                     +52 55 7455 5091
                   </a>
@@ -120,7 +120,7 @@ export default function ContactoPage() {
 
               {/* Horario */}
               <div className="flex items-start gap-3.5">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#981A15] flex-shrink-0">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#981A15]/15 border border-[#981A15]/30 flex items-center justify-center text-[#E25C54] flex-shrink-0">
                   <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
@@ -150,7 +150,7 @@ export default function ContactoPage() {
           {/* Columna Derecha: Formulario Glassmorphism */}
           <div className="lg:col-span-7">
             <div className="mb-6 sm:mb-8">
-              <span className="text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1.5">
+              <span className="text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1.5">
                 Envía un Mensaje
               </span>
               <h2 className="text-2xl sm:text-3xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">

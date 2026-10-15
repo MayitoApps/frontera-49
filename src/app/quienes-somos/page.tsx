@@ -20,7 +20,7 @@ export default function QuienesSomosPage() {
     <div className="bg-[#0A0D0C] text-[#F4F5F1] pt-24 sm:pt-28 pb-16 sm:pb-20">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-8 sm:py-16 text-center border-b border-white/10">
-        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-2 sm:mb-3">
+        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-2 sm:mb-3">
           Nuestra Identidad · Roma Norte
         </span>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-light text-[#F4F5F1] font-display uppercase tracking-wide max-w-4xl mx-auto leading-tight mb-4 sm:mb-6">
@@ -34,8 +34,8 @@ export default function QuienesSomosPage() {
       {/* Filosofía Grupo Orgánico - Espaciado móvil optimizado */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-20 border-b border-white/10">
         <div className="max-w-4xl mx-auto text-center space-y-5 sm:space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#981A15]/10 border border-[#981A15]/30 text-[#981A15] text-[10px] sm:text-xs uppercase tracking-widest font-medium">
-            <Compass className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/15 text-[#F4F5F1] text-[10px] sm:text-xs uppercase tracking-widest font-medium">
+            <Compass className="w-3.5 h-3.5 text-[#E25C54]" />
             <span>Sello Grupo Orgánico</span>
           </div>
 
@@ -52,10 +52,10 @@ export default function QuienesSomosPage() {
               href="https://www.gohb.com.mx/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#981A15] hover:text-[#B8241D] border border-[#981A15]/40 px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg hover:bg-[#981A15]/10 transition-colors"
+              className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-[#F4F5F1] hover:text-white bg-white/5 hover:bg-[#981A15] border border-white/20 hover:border-[#981A15] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg transition-all duration-300 group shadow-sm hover:shadow-glow-red"
             >
-              Visitar Grupo Orgánico Hoteles Boutique
-              <ExternalLink className="w-3.5 h-3.5" />
+              <span>Visitar Grupo Orgánico Hoteles Boutique</span>
+              <ExternalLink className="w-3.5 h-3.5 text-[#F4F5F1] group-hover:translate-x-0.5 transition-transform" />
             </a>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function QuienesSomosPage() {
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-20 border-b border-white/10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-6 space-y-4 sm:space-y-6">
-            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block">
               Colonia Roma Norte · CDMX
             </span>
             <h2 className="text-2xl sm:text-4xl font-light text-[#F4F5F1] font-display uppercase tracking-wide leading-tight">

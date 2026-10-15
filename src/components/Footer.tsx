@@ -27,17 +27,17 @@ export default function Footer() {
               Un espacio vivo en el corazón de la Roma Norte. Donde el diseño honesto, la comunidad creativa y la vibrante vida urbana de la Ciudad de México se encuentran.
             </p>
             <div className="pt-1">
-              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] block mb-1.5 font-semibold">
+              <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] block mb-1.5 font-semibold">
                 Parte del Universo
               </span>
               <a
                 href="https://www.gohb.com.mx/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-[#F4F5F1] hover:text-[#981A15] transition-colors uppercase tracking-wider"
+                className="inline-flex items-center gap-1.5 text-xs text-[#F4F5F1] hover:text-[#E25C54] transition-colors uppercase tracking-wider"
               >
                 Grupo Orgánico Hoteles Boutique
-                <ExternalLink className="w-3 h-3 text-[#981A15]" />
+                <ExternalLink className="w-3 h-3 text-[#E25C54]" />
               </a>
             </div>
           </div>
@@ -49,42 +49,42 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 sm:space-y-3 text-xs sm:text-sm">
               <li>
-                <Link href="/habitaciones" className="hover:text-[#981A15] transition-colors">
+                <Link href="/habitaciones" className="hover:text-[#E25C54] transition-colors">
                   Habitaciones & Descanso
                 </Link>
               </li>
               <li>
-                <Link href="/espacios" className="hover:text-[#981A15] transition-colors">
+                <Link href="/espacios" className="hover:text-[#E25C54] transition-colors">
                   Rooftop & Coworking
                 </Link>
               </li>
               <li>
-                <Link href="/restaurante" className="hover:text-[#981A15] transition-colors">
+                <Link href="/restaurante" className="hover:text-[#E25C54] transition-colors">
                   Garnachería Única
                 </Link>
               </li>
               <li>
-                <Link href="/eventos" className="hover:text-[#981A15] transition-colors">
+                <Link href="/eventos" className="hover:text-[#E25C54] transition-colors">
                   Eventos & Foro Cultural
                 </Link>
               </li>
               <li>
-                <Link href="/momentos" className="hover:text-[#981A15] transition-colors">
+                <Link href="/momentos" className="hover:text-[#E25C54] transition-colors">
                   Cenas Románticas & Cine
                 </Link>
               </li>
               <li>
-                <Link href="/quienes-somos" className="hover:text-[#981A15] transition-colors">
+                <Link href="/quienes-somos" className="hover:text-[#E25C54] transition-colors">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/hagamos-equipo" className="hover:text-[#981A15] transition-colors">
+                <Link href="/hagamos-equipo" className="hover:text-[#E25C54] transition-colors">
                   Alianzas & Creadores
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="hover:text-[#981A15] transition-colors">
+                <Link href="/contacto" className="hover:text-[#E25C54] transition-colors">
                   Contacto
                 </Link>
               </li>
@@ -98,13 +98,13 @@ export default function Footer() {
             </h3>
             <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm">
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-[#981A15] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#E25C54] flex-shrink-0 mt-0.5" />
                 <span className="leading-relaxed text-[#F4F5F1]">
                   Frontera 49, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX
                 </span>
               </div>
               <div className="flex items-start gap-3">
-                <Clock className="w-4 h-4 text-[#981A15] flex-shrink-0 mt-0.5" />
+                <Clock className="w-4 h-4 text-[#E25C54] flex-shrink-0 mt-0.5" />
                 <div>
                   <span className="block text-[10px] sm:text-xs uppercase tracking-wider text-[#8E9B93]">
                     Atención al Cliente:
@@ -117,9 +117,9 @@ export default function Footer() {
                   href="https://www.instagram.com/hostalromanorte/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#F4F5F1] hover:text-[#981A15] transition-colors bg-white/5 px-3.5 py-2 rounded-lg border border-white/10 hover:border-[#981A15]"
+                  className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#F4F5F1] hover:text-[#E25C54] transition-colors bg-white/5 px-3.5 py-2 rounded-lg border border-white/10 hover:border-[#E25C54]"
                 >
-                  <Instagram className="w-4 h-4 text-[#981A15]" />
+                  <Instagram className="w-4 h-4 text-[#E25C54]" />
                   @hostalromanorte
                 </a>
               </div>
@@ -133,44 +133,44 @@ export default function Footer() {
             </h3>
             <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm">
               <div>
-                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-[#981A15] block mb-1 font-semibold">
+                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-[#E25C54] block mb-1 font-semibold">
                   Líneas Fijas
                 </span>
                 <div className="text-[#F4F5F1] space-x-2">
-                  <a href="tel:5596969073" className="hover:text-[#981A15] transition-colors">
+                  <a href="tel:5596969073" className="hover:text-[#E25C54] transition-colors">
                     55 9696 9073
                   </a>
                   <span>/</span>
-                  <a href="tel:5596910966" className="hover:text-[#981A15] transition-colors">
+                  <a href="tel:5596910966" className="hover:text-[#E25C54] transition-colors">
                     55 9691 0966
                   </a>
                 </div>
               </div>
 
               <div>
-                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-[#981A15] block mb-1 font-semibold">
+                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-[#E25C54] block mb-1 font-semibold">
                   Líneas Móviles
                 </span>
                 <div className="text-[#F4F5F1] space-x-2">
-                  <a href="tel:5556455347" className="hover:text-[#981A15] transition-colors">
+                  <a href="tel:5556455347" className="hover:text-[#E25C54] transition-colors">
                     55 5645 5347
                   </a>
                   <span>/</span>
-                  <a href="tel:5555737822" className="hover:text-[#981A15] transition-colors">
+                  <a href="tel:5555737822" className="hover:text-[#E25C54] transition-colors">
                     55 5573 7822
                   </a>
                 </div>
               </div>
 
               <div>
-                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-[#981A15] block mb-1 font-semibold">
+                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-[#E25C54] block mb-1 font-semibold">
                   WhatsApp Concierge
                 </span>
                 <a
                   href="https://wa.me/525574555091"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#F4F5F1] hover:text-[#981A15] transition-colors font-medium block"
+                  className="text-[#F4F5F1] hover:text-[#E25C54] transition-colors font-medium block"
                 >
                   +52 55 7455 5091
                 </a>
@@ -183,18 +183,18 @@ export default function Footer() {
         <div className="pt-6 sm:pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
           <p>© {currentYear} Frontera 49 Roma Norte. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6">
-            <Link href="/aviso-de-privacidad" className="hover:text-[#981A15] transition-colors">
+            <Link href="/aviso-de-privacidad" className="hover:text-[#E25C54] transition-colors">
               Aviso de Privacidad
             </Link>
             <a
               href="https://www.gohb.com.mx/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#981A15] transition-colors"
+              className="hover:text-[#E25C54] transition-colors"
             >
               Grupo Orgánico
             </a>
-            <Link href="/sitemap.xml" className="hover:text-[#981A15] transition-colors">
+            <Link href="/sitemap.xml" className="hover:text-[#E25C54] transition-colors">
               Sitemap
             </Link>
           </div>

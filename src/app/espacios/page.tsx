@@ -100,7 +100,7 @@ export default function EspaciosPage() {
     <div className="bg-[#0A0D0C] text-[#F4F5F1] pt-24 sm:pt-28 pb-16 sm:pb-20">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-16 text-center border-b border-white/10">
-        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-2 sm:mb-3">
+        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-2 sm:mb-3">
           Comunidad & Arquitectura
         </span>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-light text-[#F4F5F1] font-display uppercase tracking-wide max-w-4xl mx-auto leading-tight mb-4 sm:mb-6">
@@ -165,7 +165,7 @@ export default function EspaciosPage() {
                 }`}
               >
                 <div>
-                  <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-1">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-1">
                     {espacio.subtitle}
                   </span>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">

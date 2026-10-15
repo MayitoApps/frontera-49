@@ -5,13 +5,16 @@ export const metadata: Metadata = {
   title: 'Aviso de Privacidad',
   description:
     'Aviso de privacidad legal de Frontera 49 Roma Norte y Grupo Orgánico Hoteles Boutique.',
+  alternates: {
+    canonical: 'https://www.frontera49.com/aviso-de-privacidad',
+  },
 };
 
 export default function AvisoPrivacidadPage() {
   return (
     <div className="bg-[#0A0D0C] text-[#F4F5F1] pt-24 sm:pt-28 pb-16 sm:pb-20">
       <div className="max-w-4xl mx-auto px-5 sm:px-8 py-8 sm:py-16">
-        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-2 sm:mb-3">
+        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-2 sm:mb-3">
           Términos Legales
         </span>
         <h1 className="text-3xl sm:text-5xl font-light text-[#F4F5F1] font-display uppercase tracking-wide mb-6 sm:mb-8">
@@ -46,7 +49,7 @@ export default function AvisoPrivacidadPage() {
 
           <h2 className="text-base sm:text-lg text-[#F4F5F1] font-medium pt-3 sm:pt-4">4. Derechos ARCO</h2>
           <p>
-            Usted tiene en todo momento el derecho de Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales (Derechos ARCO), enviando una solicitud por escrito a la cuenta de correo: <a href="mailto:artes.grupoorganico@gmail.com" className="text-[#981A15] underline">artes.grupoorganico@gmail.com</a> con el asunto &quot;Derechos ARCO - Frontera 49&quot;.
+            Usted tiene en todo momento el derecho de Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales (Derechos ARCO), enviando una solicitud por escrito a la cuenta de correo: <a href="mailto:artes.grupoorganico@gmail.com" className="text-[#E25C54] underline hover:text-[#F4F5F1] transition-colors">artes.grupoorganico@gmail.com</a> con el asunto &quot;Derechos ARCO - Frontera 49&quot;.
           </p>
 
           <p className="pt-6 text-xs text-[#8E9B93]/60">

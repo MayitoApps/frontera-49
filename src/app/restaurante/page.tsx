@@ -34,7 +34,7 @@ export default function RestaurantePage() {
     <div className="bg-[#0A0D0C] text-[#F4F5F1] pt-24 sm:pt-28 pb-16 sm:pb-20">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-16 text-center border-b border-white/10">
-        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block mb-2 sm:mb-3">
+        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block mb-2 sm:mb-3">
           Gastronomía Mexicana Tradicional · Roma Norte
         </span>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-light text-[#F4F5F1] font-display uppercase tracking-wide max-w-4xl mx-auto leading-tight mb-4 sm:mb-6">
@@ -50,7 +50,7 @@ export default function RestaurantePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-6 space-y-4 sm:space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-[#981A15]/40 text-[#F4F5F1] text-[10px] sm:text-xs uppercase tracking-widest font-sans">
-              <Flame className="w-3.5 h-3.5 text-[#981A15]" />
+              <Flame className="w-3.5 h-3.5 text-[#E25C54]" />
               <span>Ingredientes Frescos y Locales</span>
             </div>
 
@@ -102,7 +102,7 @@ export default function RestaurantePage() {
       {/* Sección Editorial 2: Un lugar para compartir */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-16 border-b border-white/10">
         <div className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
-          <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold block">
+          <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold block">
             Capacidad: 50 Pax · Ambiente Social
           </span>
           <h2 className="text-2xl sm:text-4xl font-light text-[#F4F5F1] font-display uppercase tracking-wide">
@@ -117,7 +117,7 @@ export default function RestaurantePage() {
       {/* Galería Fotográfica de Platillos */}
       <section className="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-16">
         <div className="text-center mb-8 sm:mb-12">
-          <h3 className="text-[10px] sm:text-xs uppercase tracking-widest text-[#981A15] font-semibold mb-1">
+          <h3 className="text-[10px] sm:text-xs uppercase tracking-widest text-[#E25C54] font-semibold mb-1">
             Nuestra Mesa
           </h3>
           <p className="text-xl sm:text-3xl font-light text-[#F4F5F1] font-display uppercase">

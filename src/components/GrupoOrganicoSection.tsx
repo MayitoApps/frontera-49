@@ -11,7 +11,7 @@ export default function GrupoOrganicoSection() {
         {/* Etiqueta superior */}
         <div className="text-center mb-3 sm:mb-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-[#981A15]/30 text-[#F4F5F1] text-[10px] sm:text-xs uppercase tracking-widest font-sans">
-            <Compass className="w-3.5 h-3.5 text-[#981A15]" />
+            <Compass className="w-3.5 h-3.5 text-[#E25C54]" />
             <span>Colección Exclusiva</span>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function GrupoOrganicoSection() {
             Y cuando el cuerpo pida mar, calidez y tradición, Veracruz te espera con su brisa, su sabor y esa forma única de hacerte sentir bienvenido.
           </p>
 
-          <div className="py-2 space-y-1.5 sm:space-y-2 text-[#981A15] font-serif italic text-sm sm:text-lg font-normal">
+          <div className="py-2 space-y-1.5 sm:space-y-2 text-[#E25C54] font-serif italic text-sm sm:text-lg font-normal">
             <p>Cada destino tiene su propia esencia.</p>
             <p>Cada espacio, una historia por vivir.</p>
             <p>Cada experiencia, un momento para recordar.</p>

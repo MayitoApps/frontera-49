@@ -124,7 +124,7 @@ export default function ContactForm() {
         {status === 'success' ? (
           /* Estado de Éxito */
           <div className="text-center py-6 sm:py-8 animate-fadeIn">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-5 rounded-full bg-[#981A15]/15 border border-[#981A15]/40 flex items-center justify-center text-[#981A15]">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-5 rounded-full bg-[#981A15]/15 border border-[#981A15]/40 flex items-center justify-center text-[#E25C54]">
               <CheckCircle2 className="w-7 h-7 sm:w-8 sm:h-8" />
             </div>
 
@@ -189,7 +189,7 @@ export default function ContactForm() {
               {/* Nombre Completo */}
               <div>
                 <label className="block text-[11px] sm:text-xs uppercase tracking-wider text-[#8E9B93] mb-1.5 font-sans font-medium">
-                  Nombre Completo <span className="text-[#981A15]">*</span>
+                  Nombre Completo <span className="text-[#E25C54] font-bold">*</span>
                 </label>
                 <div className="relative">
                   <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8E9B93]" />
@@ -209,7 +209,7 @@ export default function ContactForm() {
               {/* Correo Electrónico */}
               <div>
                 <label className="block text-[11px] sm:text-xs uppercase tracking-wider text-[#8E9B93] mb-1.5 font-sans font-medium">
-                  Correo Electrónico <span className="text-[#981A15]">*</span>
+                  Correo Electrónico <span className="text-[#E25C54] font-bold">*</span>
                 </label>
                 <div className="relative">
                   <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8E9B93]" />
@@ -231,7 +231,7 @@ export default function ContactForm() {
               {/* Teléfono o WhatsApp */}
               <div>
                 <label className="block text-[11px] sm:text-xs uppercase tracking-wider text-[#8E9B93] mb-1.5 font-sans font-medium">
-                  Teléfono / WhatsApp <span className="text-[#981A15]">*</span>
+                  Teléfono / WhatsApp <span className="text-[#E25C54] font-bold">*</span>
                 </label>
                 <div className="relative">
                   <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8E9B93]" />
@@ -250,7 +250,7 @@ export default function ContactForm() {
               {/* Motivo de Interés */}
               <div>
                 <label className="block text-[11px] sm:text-xs uppercase tracking-wider text-[#8E9B93] mb-1.5 font-sans font-medium">
-                  Motivo de Interés <span className="text-[#981A15]">*</span>
+                  Motivo de Interés <span className="text-[#E25C54] font-bold">*</span>
                 </label>
                 <div className="relative">
                   <Sparkles className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8E9B93]" />
@@ -311,7 +311,7 @@ export default function ContactForm() {
             {/* Mensaje o Detalles */}
             <div>
               <label className="block text-[11px] sm:text-xs uppercase tracking-wider text-[#8E9B93] mb-1.5 font-sans font-medium">
-                Mensaje o Detalles <span className="text-[#981A15]">*</span>
+                Mensaje o Detalles <span className="text-[#E25C54] font-bold">*</span>
               </label>
               <div className="relative">
                 <MessageSquare className="absolute left-3.5 top-3 w-4 h-4 text-[#8E9B93]" />
@@ -343,7 +343,7 @@ export default function ContactForm() {
                 Acepto el{' '}
                 <a
                   href="/aviso-de-privacidad"
-                  className="text-[#981A15] underline hover:text-[#B8241D] transition-colors"
+                  className="text-[#E25C54] underline hover:text-[#F4F5F1] transition-colors"
                 >
                   aviso de privacidad
                 </a>{' '}

@@ -27,14 +27,14 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8 pt-28 pb-12 sm:py-32 text-center flex flex-col items-center">
         {/* Kicker superior */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#981A15]/40 text-[#F4F5F1] text-[10px] sm:text-xs uppercase tracking-widest font-sans mb-5 sm:mb-8">
-          <MapPin className="w-3.5 h-3.5 text-[#981A15]" />
+          <MapPin className="w-3.5 h-3.5 text-[#E25C54]" />
           <span>Roma Norte · Ciudad de México</span>
         </div>
 
         {/* Título Principal: En móvil mucho más grande y dominante que el subtítulo */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#F4F5F1] tracking-tight font-display leading-[1.12] max-w-4xl mx-auto mb-4 sm:mb-6">
           Así se siente la Ciudad, <br className="hidden sm:inline" />
-          <span className="text-[#981A15] font-normal italic font-serif drop-shadow-md">
+          <span className="text-[#E25C54] font-normal italic font-serif drop-shadow-md">
             Así se Siente Frontera 49.
           </span>
         </h1>
@@ -64,26 +64,26 @@ export default function HeroSection() {
         {/* Micro-puntos de valor compactos en móvil */}
         <div className="mt-8 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-8 border-t border-white/10 pt-5 sm:pt-8 w-full max-w-3xl text-center text-[10px] sm:text-xs uppercase tracking-widest text-[#8E9B93]">
           <div className="bg-white/[0.02] sm:bg-transparent p-2 sm:p-0 rounded-lg">
-            <span className="text-[#981A15] font-bold block text-sm sm:text-base">23</span>
+            <span className="text-[#E25C54] font-bold block text-sm sm:text-base">23</span>
             <span>Habitaciones</span>
           </div>
           <div className="bg-white/[0.02] sm:bg-transparent p-2 sm:p-0 rounded-lg">
-            <span className="text-[#981A15] font-bold block text-sm sm:text-base">Rooftop</span>
+            <span className="text-[#E25C54] font-bold block text-sm sm:text-base">Rooftop</span>
             <span>Vista Panorámica</span>
           </div>
           <div className="bg-white/[0.02] sm:bg-transparent p-2 sm:p-0 rounded-lg">
-            <span className="text-[#981A15] font-bold block text-sm sm:text-base">Foro Cultural</span>
+            <span className="text-[#E25C54] font-bold block text-sm sm:text-base">Foro Cultural</span>
             <span>Arte & Talleres</span>
           </div>
           <div className="bg-white/[0.02] sm:bg-transparent p-2 sm:p-0 rounded-lg">
-            <span className="text-[#981A15] font-bold block text-sm sm:text-base">Coworking</span>
+            <span className="text-[#E25C54] font-bold block text-sm sm:text-base">Coworking</span>
             <span>Fibra Óptica</span>
           </div>
         </div>
 
         {/* Indicador de scroll */}
         <div className="mt-6 sm:mt-10 text-[#8E9B93] animate-bounce">
-          <ChevronDown className="w-5 h-5 text-[#981A15]" />
+          <ChevronDown className="w-5 h-5 text-[#E25C54]" />
         </div>
       </div>
     </section>
