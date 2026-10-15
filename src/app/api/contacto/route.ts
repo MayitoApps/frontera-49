@@ -300,9 +300,10 @@ export async function POST(req: NextRequest) {
     if (process.env.RESEND_API_KEY) {
       try {
         const resend = new Resend(process.env.RESEND_API_KEY);
-        const fromAddress = process.env.RESEND_FROM_EMAIL || 'Frontera 49 <reservas@frontera49.com>';
+        // Si no se especifica remitente verificado, onboarding@resend.dev funciona de inmediato sin configurar DNS en Resend
+        const fromAddress = process.env.RESEND_FROM_EMAIL || 'Frontera 49 <onboarding@resend.dev>';
 
-        await resend.emails.send({
+        const { data: resendData, error: resendError } = await resend.emails.send({
           from: fromAddress,
           to: recipientEmail,
           replyTo: email,
@@ -310,13 +311,19 @@ export async function POST(req: NextRequest) {
           html: htmlEmail,
         });
 
-        return NextResponse.json({
-          success: true,
-          provider: 'resend',
-          message: 'Tu mensaje ha sido enviado correctamente a nuestro equipo.',
-        });
-      } catch (resendError) {
-        console.error('[Email Dispatch] Error con Resend:', resendError);
+        if (resendError) {
+          console.error('[Email Dispatch] Error devuelto por Resend API:', resendError);
+          // Si falló Resend, pasamos a intentar con SMTP si está configurado
+        } else {
+          console.log('[Email Dispatch] Correo enviado exitosamente vía Resend:', resendData?.id);
+          return NextResponse.json({
+            success: true,
+            provider: 'resend',
+            message: 'Tu mensaje ha sido enviado correctamente a nuestro equipo.',
+          });
+        }
+      } catch (resendException) {
+        console.error('[Email Dispatch] Excepción con Resend:', resendException);
         // Continuar al fallback SMTP si falla
       }
     }
@@ -324,21 +331,26 @@ export async function POST(req: NextRequest) {
     // 2. Motor Nodemailer SMTP si existen SMTP_USER y SMTP_PASS
     if (process.env.SMTP_USER && process.env.SMTP_PASS) {
       try {
+        const smtpPort = Number(process.env.SMTP_PORT) || 465;
         const transporter = nodemailer.createTransport({
-          service: 'gmail',
+          host: process.env.SMTP_HOST || 'smtp.gmail.com',
+          port: smtpPort,
+          secure: smtpPort === 465,
           auth: {
             user: process.env.SMTP_USER,
             pass: process.env.SMTP_PASS,
           },
         });
 
-        await transporter.sendMail({
+        const info = await transporter.sendMail({
           from: `"Frontera 49 Web" <${process.env.SMTP_USER}>`,
           to: recipientEmail,
           replyTo: email,
           subject: emailSubject,
           html: htmlEmail,
         });
+
+        console.log('[Email Dispatch] Correo enviado exitosamente vía SMTP:', info.messageId);
 
         return NextResponse.json({
           success: true,
@@ -350,7 +362,18 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 3. Fallback de desarrollo / sin credenciales activas
+    // 3. Manejo en producción si no hay credenciales válidas
+    if (process.env.NODE_ENV === 'production') {
+      console.error('[API Contacto] Error: No se configuraron credenciales válidas (RESEND_API_KEY o SMTP_USER/PASS) en el entorno de producción.');
+      return NextResponse.json(
+        {
+          error: 'No se pudo enviar el mensaje por correo electrónico en este momento. Por favor contáctanos directamente por WhatsApp para atenderte de inmediato.',
+        },
+        { status: 503 }
+      );
+    }
+
+    // 4. Fallback de desarrollo local
     console.log('----------------------------------------------------');
     console.log('[MODO DESARROLLO / SIN CREDENCIALES] Correo Simulado:');
     console.log(`Para: ${recipientEmail}`);
@@ -366,7 +389,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       provider: 'dev_mock',
-      message: 'Mensaje recibido en modo demostración. Configura RESEND_API_KEY o SMTP_PASS para envíos reales.',
+      message: 'Mensaje recibido en modo desarrollo (configura RESEND_API_KEY o SMTP_PASS en Vercel para envíos reales).',
     });
   } catch (error) {
     console.error('[API Contacto Error]:', error);
