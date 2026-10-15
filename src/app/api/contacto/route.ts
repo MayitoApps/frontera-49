@@ -331,19 +331,22 @@ export async function POST(req: NextRequest) {
     // 2. Motor Nodemailer SMTP si existen SMTP_USER y SMTP_PASS
     if (process.env.SMTP_USER && process.env.SMTP_PASS) {
       try {
+        const cleanUser = process.env.SMTP_USER.trim();
+        const cleanPass = process.env.SMTP_PASS.trim().replace(/\s+/g, '');
         const smtpPort = Number(process.env.SMTP_PORT) || 465;
+
         const transporter = nodemailer.createTransport({
           host: process.env.SMTP_HOST || 'smtp.gmail.com',
           port: smtpPort,
           secure: smtpPort === 465,
           auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
+            user: cleanUser,
+            pass: cleanPass,
           },
         });
 
         const info = await transporter.sendMail({
-          from: `"Frontera 49 Web" <${process.env.SMTP_USER}>`,
+          from: `"Frontera 49 Roma Norte" <${cleanUser}>`,
           to: recipientEmail,
           replyTo: email,
           subject: emailSubject,

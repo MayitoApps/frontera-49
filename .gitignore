@@ -38,3 +38,6 @@ next-env.d.ts
 /frontera-49.png
 /frontera-49-blanco.png
 /whatsapp.png
+
+.vercel
+.env*
