@@ -13,7 +13,7 @@ export default function FloatingWhatsApp() {
     <div className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end">
       {/* Tooltip / Quick card popup */}
       {isOpen && (
-        <div className="mb-3 w-72 bg-[#121715]/95 border border-[#981A15]/40 backdrop-blur-xl p-4 rounded-xl shadow-2xl text-left animate-fadeIn">
+        <div className="mb-3 w-72 max-w-[calc(100vw-2.5rem)] bg-[#121715]/95 border border-[#981A15]/40 backdrop-blur-xl p-4 rounded-xl shadow-2xl text-left animate-fadeIn">
           <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/10">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#981A15] animate-pulse" />

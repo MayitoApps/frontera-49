@@ -118,13 +118,24 @@ export default function DiaDeMuertosPopup({ forceOpen = false }: DiaDeMuertosPop
     }
   }, [mounted, forceOpen, handleOpen]);
 
-  // Bloqueo de scroll de fondo mientras el modal está abierto
+  // Bloqueo total de scroll de fondo (vertical y horizontal) mientras el modal está abierto
   useEffect(() => {
     if (isOpen) {
-      const originalOverflow = document.body.style.overflow;
+      const originalBodyOverflow = document.body.style.overflow;
+      const originalHtmlOverflow = document.documentElement.style.overflow;
+      const originalBodyOverflowX = document.body.style.overflowX;
+      const originalHtmlOverflowX = document.documentElement.style.overflowX;
+
       document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflowX = 'hidden';
+      document.documentElement.style.overflowX = 'hidden';
+
       return () => {
-        document.body.style.overflow = originalOverflow;
+        document.body.style.overflow = originalBodyOverflow;
+        document.documentElement.style.overflow = originalHtmlOverflow;
+        document.body.style.overflowX = originalBodyOverflowX;
+        document.documentElement.style.overflowX = originalHtmlOverflowX;
       };
     }
   }, [isOpen]);
@@ -134,8 +145,8 @@ export default function DiaDeMuertosPopup({ forceOpen = false }: DiaDeMuertosPop
   return (
     <div
       id="gohb-modal-frontera49"
-      className={`fixed inset-0 z-[99999999] flex items-center justify-center p-3 sm:p-6 overflow-hidden transition-all duration-300 ease-out ${
-        isAnimating ? 'opacity-100 visible' : 'opacity-0 invisible'
+      className={`fixed inset-0 z-[99999999] flex items-center justify-center p-3 sm:p-6 overflow-y-auto overflow-x-hidden overscroll-contain transition-all duration-300 ease-out select-none ${
+        isAnimating ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
       }`}
       role="dialog"
       aria-modal="true"
@@ -144,15 +155,15 @@ export default function DiaDeMuertosPopup({ forceOpen = false }: DiaDeMuertosPop
       {/* Fondo difuminado (Backdrop) */}
       <div
         onClick={handleClose}
-        className={`absolute inset-0 bg-[#0E0B09]/82 backdrop-blur-md transition-opacity duration-300 ease-out cursor-pointer ${
+        className={`fixed inset-0 bg-[#0E0B09]/82 backdrop-blur-md transition-opacity duration-300 ease-out cursor-pointer ${
           isAnimating ? 'opacity-100' : 'opacity-0'
         }`}
       />
 
-      {/* Tarjeta Modal Contenedora */}
+      {/* Tarjeta Modal Contenedora: Perfectamente centrada en horizontal y vertical */}
       <div
-        className={`relative z-10 w-full max-w-[530px] max-h-[92vh] sm:max-h-[90vh] overflow-y-auto overflow-x-hidden rounded-2xl sm:rounded-3xl bg-[#1D1815] border border-[#D9822B]/45 p-5 sm:p-7 text-[#F2E8DC] shadow-[0_25px_65px_-10px_rgba(0,0,0,0.95),0_0_40px_rgba(217,130,43,0.22)] transition-all duration-300 cubic-bezier(0.16,1,0.3,1) ${
-          isAnimating ? 'translate-y-0 scale-100 opacity-100' : 'translate-y-5 scale-95 opacity-0'
+        className={`relative z-10 w-full max-w-[530px] m-auto my-auto max-h-[calc(100dvh-2rem)] sm:max-h-[calc(100dvh-3.5rem)] overflow-y-auto overflow-x-hidden rounded-2xl sm:rounded-3xl bg-[#1D1815] border border-[#D9822B]/45 p-5 sm:p-7 text-[#F2E8DC] shadow-[0_25px_65px_-10px_rgba(0,0,0,0.95),0_0_40px_rgba(217,130,43,0.22)] transition-all duration-300 ease-out transform select-auto ${
+          isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
         }`}
         style={{
           scrollbarWidth: 'thin',
@@ -161,7 +172,7 @@ export default function DiaDeMuertosPopup({ forceOpen = false }: DiaDeMuertosPop
       >
         {/* Resplandor decorativo de fondo */}
         <div
-          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-4/5 h-36 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#D9822B]/22 via-[#B84A29]/08 to-transparent rounded-t-2xl sm:rounded-t-3xl"
+          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-4/5 h-36 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#D9822B]/22 via-[#B84A29]/08 to-transparent rounded-t-2xl sm:rounded-t-3xl overflow-hidden"
           aria-hidden="true"
         />
 
@@ -199,7 +210,7 @@ export default function DiaDeMuertosPopup({ forceOpen = false }: DiaDeMuertosPop
           {EVENTS.map((event) => (
             <div
               key={event.id}
-              className="group relative rounded-xl bg-[#261F1B]/75 hover:bg-[#2D241F]/90 border border-[#B84A29]/28 hover:border-[#D9822B]/60 border-l-[3px] border-l-[#D9822B] p-3 sm:p-3.5 text-left transition-all duration-200 hover:translate-x-1"
+              className="group relative rounded-xl bg-[#261F1B]/75 hover:bg-[#2D241F]/90 border border-[#B84A29]/28 hover:border-[#D9822B]/60 border-l-[3px] border-l-[#D9822B] p-3 sm:p-3.5 text-left transition-all duration-200 hover:shadow-[0_0_12px_rgba(217,130,43,0.15)]"
             >
               {/* Event Tag */}
               <div className="text-[9.5px] sm:text-[10px] font-bold tracking-[0.08em] text-[#D9822B] uppercase mb-1">
@@ -229,7 +240,7 @@ export default function DiaDeMuertosPopup({ forceOpen = false }: DiaDeMuertosPop
             className="group flex items-center justify-center gap-2.5 w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-[#D9822B] to-[#B84A29] hover:from-[#E68E35] hover:to-[#C45330] text-white font-bold text-[13.5px] sm:text-[14px] tracking-wide shadow-[0_6px_20px_rgba(217,130,43,0.4)] hover:shadow-[0_10px_28px_rgba(217,130,43,0.6)] hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
           >
             <span>Ver Promociones y Reservar Frontera 49</span>
-            <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+            <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" />
           </a>
 
           <p className="text-[10.5px] sm:text-[11px] text-[#A89B91] mt-2.5 opacity-80 font-light">

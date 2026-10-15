@@ -115,9 +115,11 @@ export default function ContactForm() {
 
   return (
     <div className="relative w-full max-w-2xl mx-auto">
-      {/* Desenfoques ambientales decorativos en esquinas con tinte rojo */}
-      <div className="absolute -top-10 -left-10 w-56 h-56 bg-[#981A15]/15 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute -bottom-10 -right-10 w-56 h-56 bg-[#981A15]/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      {/* Desenfoques ambientales decorativos contenidos para evitar overflow horizontal */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10 rounded-2xl">
+        <div className="absolute -top-10 -left-10 w-56 h-56 bg-[#981A15]/15 rounded-full blur-3xl" />
+        <div className="absolute -bottom-10 -right-10 w-56 h-56 bg-[#981A15]/10 rounded-full blur-3xl" />
+      </div>
 
       {/* Contenedor principal con Glassmorphism - Padding optimizado para móvil */}
       <div className="relative bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-2xl rounded-2xl p-5 sm:p-8 md:p-10 transition-all">

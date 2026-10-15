@@ -240,7 +240,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
         />
       </head>
-      <body className="bg-[#0A0D0C] text-[#F4F5F1] antialiased selection:bg-[#981A15] selection:text-[#F4F5F1] flex flex-col min-h-screen">
+      <body className="bg-[#0A0D0C] text-[#F4F5F1] antialiased selection:bg-[#981A15] selection:text-[#F4F5F1] flex flex-col min-h-screen overflow-x-hidden w-full max-w-full">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

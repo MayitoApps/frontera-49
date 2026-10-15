@@ -7,6 +7,14 @@
   --foreground: #F4F5F1;
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -18,7 +26,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-raleway), sans-serif;
-  overflow-x: hidden;
+  min-height: 100%;
 }
 
 ::selection {
