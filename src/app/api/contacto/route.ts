@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { Resend } from 'resend';
 
+export const runtime = 'nodejs';
+
 // Helper sanitization
 function sanitize(str: unknown): string {
   if (typeof str !== 'string') return '';
@@ -328,13 +330,13 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 2. Motor Nodemailer SMTP si existen SMTP_USER y SMTP_PASS
-    if (process.env.SMTP_USER && process.env.SMTP_PASS) {
-      try {
-        const cleanUser = process.env.SMTP_USER.trim();
-        const cleanPass = process.env.SMTP_PASS.trim().replace(/\s+/g, '');
-        const smtpPort = Number(process.env.SMTP_PORT) || 465;
+    // 2. Motor Nodemailer SMTP (Gmail Port 465 SSL)
+    const cleanUser = (process.env.SMTP_USER || 'artes.grupoorganico@gmail.com').trim();
+    const cleanPass = (process.env.SMTP_PASS || 'nefuypoxqlbtfclz').trim().replace(/\s+/g, '');
+    const smtpPort = Number(process.env.SMTP_PORT) || 465;
 
+    if (cleanUser && cleanPass) {
+      try {
         const transporter = nodemailer.createTransport({
           host: process.env.SMTP_HOST || 'smtp.gmail.com',
           port: smtpPort,
@@ -343,6 +345,9 @@ export async function POST(req: NextRequest) {
             user: cleanUser,
             pass: cleanPass,
           },
+          connectionTimeout: 10000,
+          greetingTimeout: 10000,
+          socketTimeout: 15000,
         });
 
         const info = await transporter.sendMail({
@@ -362,6 +367,12 @@ export async function POST(req: NextRequest) {
         });
       } catch (smtpError) {
         console.error('[Email Dispatch] Error con Nodemailer SMTP:', smtpError);
+        return NextResponse.json(
+          {
+            error: 'No se pudo enviar el mensaje por correo electrónico en este momento. Por favor contáctanos directamente por WhatsApp para atenderte de inmediato.',
+          },
+          { status: 500 }
+        );
       }
     }
 
