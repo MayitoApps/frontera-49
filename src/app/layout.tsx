@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import DiaDeMuertosPopup from '@/components/DiaDeMuertosPopup';
+import NavidadPopup from '@/components/NavidadPopup';
 import './globals.css';
 
 const spaceGrotesk = Space_Grotesk({
@@ -245,7 +245,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <FloatingWhatsApp />
-        <DiaDeMuertosPopup />
+        <NavidadPopup />
         <Analytics />
       </body>
     </html>
